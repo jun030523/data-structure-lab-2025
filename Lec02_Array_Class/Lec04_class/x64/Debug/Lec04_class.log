@@ -1,1 +1,28 @@
-﻿  Lec04_class.vcxproj -> C:\Users\USER\Documents\새 폴더\Lec02_Array_Class\x64\Debug\Lec04_class.exe
+﻿  main.cpp
+C:\Users\USER\Documents\새 폴더\Lec02_Array_Class\Lec04_class\Car.h(25,27): warning C4477: 'printf' : 서식 문자열 '%x'에 'unsigned int' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 'Car *'입니다.
+  (소스 파일 'main.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\USER\Documents\새 폴더\Lec02_Array_Class\Lec04_class\Car.h(25,27): warning C4313: 'printf': 서식 문자열의 '%x'이(가) Car *' 형식의 인수 1과(와) 충돌합니다.
+  (소스 파일 'main.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\USER\Documents\새 폴더\Lec02_Array_Class\Lec04_class\main.cpp(38,5): error C2084: 'int main(void)' 함수에 이미 본문이 있습니다.
+  C:\Users\USER\Documents\새 폴더\Lec02_Array_Class\Lec04_class\main.cpp(18,5):
+  'main'의 이전 정의를 참조하십시오.
+  
+C:\Users\USER\Documents\새 폴더\Lec02_Array_Class\Lec04_class\main.cpp(40,15): error C2665: 'Music::Music': 모든 인수 형식을 변환할 수 있는 오버로드된 함수가 없습니다.
+  C:\Users\USER\Documents\새 폴더\Lec02_Array_Class\Lec04_class\Music.h(29,1):
+  'Music::Music(Music &&)'일 수 있습니다.
+  	C:\Users\USER\Documents\새 폴더\Lec02_Array_Class\Lec04_class\main.cpp(40,15):
+  	'Music::Music(Music &&)': 인수 1을(를) 'const char [1]'에서 'Music &&'(으)로 변환할 수 없습니다.
+  		C:\Users\USER\Documents\새 폴더\Lec02_Array_Class\Lec04_class\main.cpp(40,16):
+  		원인: 'const char [1]'에서 'Music'(으)로 변환할 수 없습니다.
+  C:\Users\USER\Documents\새 폴더\Lec02_Array_Class\Lec04_class\Music.h(29,1):
+  또는       'Music::Music(const Music &)'
+  	C:\Users\USER\Documents\새 폴더\Lec02_Array_Class\Lec04_class\main.cpp(40,15):
+  	'Music::Music(const Music &)': 인수 1을(를) 'const char [1]'에서 'const Music &'(으)로 변환할 수 없습니다.
+  		C:\Users\USER\Documents\새 폴더\Lec02_Array_Class\Lec04_class\main.cpp(40,16):
+  		원인: 'const char [1]'에서 'const Music'(으)로 변환할 수 없습니다.
+  C:\Users\USER\Documents\새 폴더\Lec02_Array_Class\Lec04_class\main.cpp(40,15):
+  인수 목록 '(const char [1])'을(를) 일치시키는 동안
+  
+C:\Users\USER\Documents\새 폴더\Lec02_Array_Class\Lec04_class\main.cpp(42,1): error C2059: 구문 오류: '}'

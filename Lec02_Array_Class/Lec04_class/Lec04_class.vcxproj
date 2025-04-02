@@ -129,9 +129,11 @@
   <ItemGroup>
     <ClInclude Include="Car.h" />
     <ClInclude Include="Complex.h" />
+    <ClInclude Include="Music.h" />
+    <ClInclude Include="SportsCar.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="ComplexTest.cpp" />
+    <ClCompile Include="main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
