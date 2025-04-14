@@ -1,15 +1,16 @@
 #pragma once
 #include <cstdio>
-class Complex
-{
+
+class Complex {
 	double real;
 	double imag;
+
 public:
 	void set(double r, double i) {
 		real = r;
 		imag = i;
 	}
-	void read(const char* msg = "복소수 = " ) {
+	void read(const char* msg = " 복소수 = ") {
 		printf(" %s ", msg);
 		scanf_s("%lf%lf", &real, &imag);
 	}
@@ -20,4 +21,5 @@ public:
 		real = a.real + b.real;
 		imag = a.imag + b.imag;
 	}
+
 };
