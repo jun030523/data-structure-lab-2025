@@ -35,8 +35,11 @@ string getTitle() {
 string getArtist() {
 	return artist;
 }
-string getalbum() {
+string getAlbum() {
 	return album;
+}
+string getYear() {
+	return year
 }
 
 class MusicStreamingService {
@@ -48,7 +51,7 @@ private:
 public:
 	//생성자
 	MusicStreamingService(string service_name) {
-		this->service_name = service_name;
+		this-> service_name = service_name;
 	}
 	//음악 추가 기능
 	void addMusic(string title, string artist, string album) {
@@ -65,5 +68,17 @@ public:
 			}
 		}
 		return NULL;
+	}
+
+	//음악 찾아주는 서비스(Artist)
+	vector<Music*> searchByArtist(string artist) {
+		vector <Music*> result;
+		for (int i = 0; i < music_list.size(); i++) {
+			if (music_list[i].getArtist() == artist) {
+				result.push_back(&music_list[i]);
+			}
+		}
+
+		return result;
 	}
 };
