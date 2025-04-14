@@ -37,7 +37,26 @@ int main()
 
 int main()
 {
-	Music myMusic("");
-	Music 
+	//music streaming service¸¦ »ý¼º
+	MusicStreamingService my_service("spotify");
+	my_service.addMusic("Polarloid", "ENHYPEN", "DIMENSION", 2022);
+	my_service.addMusic("Ditto", "NewJeans", "ALBUM", 2023);
+	my_service.addMusic("CAKE", "ITZY", "ALBUM", 2023);
+	my_service.addMusic("SundayMorning", "Marron5", "ALBUM", 2023);
+
+	//search music by title
+	string music_title;
+	cout << "Enter the Music Title: ";
+	cin >> music_title;
+	Music* result = my_service.searchByTitle(music_title);
+	if (result != NULL) {
+		cout << "Found: " << result->getTitle() << "by" << result->getArtist() << endl;
+	}
+	else {
+		cout << "not found" << endl;
+	}
+
 }
+
+
 
